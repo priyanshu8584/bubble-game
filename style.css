@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    /* background: -moz-linear-gradient(135deg,#fff,#111); */
+    background:linear-gradient(135deg,aqua,#00ff91);
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.panel{
+    width: 80%;
+    height: 80%;
+   
+    background-color: azure;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.paneltop{
+    height: 14%;
+    background-color: rgb(20, 86, 40);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+.elem{
+    color: white;
+     display: flex;
+     
+     align-items: center;
+     /* background-color: #fff; */
+     justify-content: space-between;
+     padding:0px 140px;
+     margin-left: 10px;
+}
+.box
+{
+    background-color:white ;
+    color: rgb(24, 118, 28);
+    border-radius: 8px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    
+    
+}
+.panelbottom{
+    
+    background-color:#fff;
+    width: 100%;
+    height: calc(100%-100px);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.bubble{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(201, 137, 42);
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(179, 93, 32);
+}
+#lastpage {
+    /* background-color: red; */
+    display: inline;
+    height: 120%;
+    width: 100%;
+    padding: 200px;
+    font-style: bold;
+    font-weight: 800;
+}
+#refreshbtn{
+    display: none;
+}
+@media screen and (max-width:1000px)
+{
+    .paneltop{
+        height: 14%;
+        background-color: rgb(20, 86, 40);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .8rem;
+    }
+    
+}
